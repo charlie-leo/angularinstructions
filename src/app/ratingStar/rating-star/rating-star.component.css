@@ -1,0 +1,54 @@
+.cont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.star{
+  height: 40px;
+  width: 40px;
+  clip-path: polygon(50% 0%, 61% 35%,
+  98% 35%, 68% 57%,
+  79% 91%, 50% 70%, 21% 91%,
+  32% 57%, 2% 35%, 39% 35%);
+  position: relative;
+  background-color: black;
+  margin-right: 10px;
+}
+.overlay{
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #b4b1b1;
+}
+.sq-b{
+  height: 40px;
+  width: 40px;
+  background-color: #e0e0e0;
+  position: relative;
+  margin-right: 10px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.star-b{
+  height: 100%;
+  width: 100%;
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #2c2b2b;
+}
+.overlay-b{
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #3bbe3b;
+}

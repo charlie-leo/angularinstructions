@@ -3,12 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import {NgxEchartsModule} from "ngx-echarts";
+import { RatingStarComponent } from './ratingStar/rating-star/rating-star.component';
+import {AppRoutingModule} from "./app-routing.module";
+import {CommonModule} from "@angular/common";
+import { MapChartComponent } from './mapChart/map-chart/map-chart.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RatingStarComponent,
+    MapChartComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     NgxEchartsModule.forRoot({
       /**
@@ -18,6 +25,7 @@ import {NgxEchartsModule} from "ngx-echarts";
        */
       echarts: () => import('echarts'), // or import('./path-to-my-custom-echarts')
     }),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
