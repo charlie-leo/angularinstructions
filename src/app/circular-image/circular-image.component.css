@@ -1,0 +1,73 @@
+/*// circle map style start*/
+.circleMap {
+  width: 500px;
+  height: 500px;
+  min-height: 500px;
+  min-width: 500px;
+  border-radius: 50%;
+  border: 1px dashed #888888;
+  position: relative;
+  margin: 80px;
+}
+.circleMap__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  position: absolute;
+  text-align: center;
+}
+.circleMap img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  border: 2px solid #642577 ;
+  object-fit: cover;
+}
+.circleMap--text{
+  background-color: #F5F5F5;
+  font-family: Roboto,sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.top{
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.left{
+  top: 50%;
+  left: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+.right{
+  top: 50%;
+  right: 0;
+  transform: translateX(50%) translateY(-50%);
+}
+.bottom{
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+.center{
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.yl{
+  color: #968D1F;
+}
+.vl{
+  color: #8E0AE0;
+}
+.rd{
+  color: #FF0000;
+}
+.cb{
+  color: #388E8B;
+}
+/*// circle map style end*/

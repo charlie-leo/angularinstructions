@@ -7,12 +7,14 @@ import { RatingStarComponent } from './ratingStar/rating-star/rating-star.compon
 import {AppRoutingModule} from "./app-routing.module";
 import {CommonModule} from "@angular/common";
 import { MapChartComponent } from './mapChart/map-chart/map-chart.component';
+import { CircularImageComponent } from './circular-image/circular-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RatingStarComponent,
-    MapChartComponent
+    MapChartComponent,
+    CircularImageComponent
   ],
   imports: [
     CommonModule,
